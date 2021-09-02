@@ -1,17 +1,17 @@
 # Chapter 1
 
-# Section 1.4
-# Getting a value from a dictionary
+# Section 1.5
+# Adding an entry to the dictionary
 
-# Problem context : We want to obtain a value from a dictionary,
-# without having to handle an exception if the key for which the value is
-# being sought is not in the dictionary
+# Problem context : While working with a dictionary D, you need to use the
+# entry D[k] if it is already present, or add a new D[k] if k is not yet
+# a key in D
 
 # Approach 1 
 
 print()
-colors = dict(red = 1, green = 2, blue = 3)
-print('colors : ', colors)
+words_to_page_number_index = dict(humble = [14,32,12], honest = [1,22,54], blue = [3])
+print('Index Dictionary : ', words_to_page_number_index)
 
 print('APPROACH 1:\n')
 def get_value_from_dict(dictionary, key):
